@@ -16,7 +16,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <style>
             body[data-bs-theme="dark"] {
                 background-color: #343a40;
@@ -29,8 +29,48 @@
         </style>
 
     </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+             <!-- place navbar here -->
+               <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+        <title>Mohamed Mussa</title>
+
+                <div class="collapse navbar-collapse" id="navSupportedContent">
+                    <ul class="navbar-nav">
+                        <div class="collapse navbar-collapse" id="navSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="/Portfolio/HTML/Home-Bootstrap.html" class="nav-link">Home</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="/Portfolio/HTML/About Me.html" class="nav-link">About me</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="/Portfolio/HTML/Portfolio.html" class="nav-link">Portfolio</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="/Portfolio/HTML/Inspiration.html" class="nav-link">Inspiration</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="/Portfolio/HTML/Contact.html" class="nav-link">Contact</a>
+                                </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+        </header>
+        <main>
+            
                    <!-------------------DARK AND LIGHT BUTTON BEGIN---------------------->
-                <div class="form-check form-switch mx-4 my-3 position-fixed bottom-0 end-0 mb-3 me-3">
+                   <div class="form-check form-switch mx-4 my-3 position-fixed bottom-0 end-0 mb-3 me-3">
                     <input
                         class="form-check-input p-2"
                         type="checkbox"
@@ -41,22 +81,6 @@
                     />
                     <label class="form-check-label" for="flexSwitchCheckChecked">Dark and Light modus</label>
                     <!-------------------DARK AND LIGHT BUTTON END---------------------->
-
-        </div>
-        <header>
-            <!-- place navbar here -->
-        </header>
-        <main>
-     <div class="p-5 big-primary-subtle text-white-rounded" id="aboutme">
-     </div>
-     <div class="p-5 rounded" id="experience"></div>
-     <div class="p-5 bg-secondary text-white-rounded" id="education"></div>
-     <div class="p-5 bg-dark-subtle text-white-rounded" id="contactme"></div>
-
-
-
-
-
 
         </main>
         <footer>
@@ -73,9 +97,9 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
-        ></script>\
-
- <script>
+        ></script>
+<!-------------------DARK AND LIGHT BUTTON SCRIPT BEGIN--------------------->
+        <script>
     function toggleTheme() {
         var element = document.body;
         element.dataset.bsTheme = element.dataset.bsTheme === "light" ? "dark" : "light";
@@ -88,6 +112,6 @@
         document.getElementById('flexSwitchCheckChecked').checked = savedTheme === 'dark';
     });
 </script>
-
+<!-------------------DARK AND LIGHT BUTTON SCRIPT END---------------------->
     </body>
 </html>
